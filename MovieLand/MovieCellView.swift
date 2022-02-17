@@ -29,7 +29,9 @@ struct MovieCellView: View {
                             .lineLimit(1)
                     } // VSTACK
                     Spacer()
-                    Text("Note")
+                    CircleProgressBarView(progress: 8.3)
+                        .frame(width: 45, height: 45)
+                        .padding(2.5)
                 } // HSTACK
                 Text("Après les évènements liés à l'affrontement avec Mystério, l'identité secrète de Spider-Man a été révélée. Il est poursuivi par le gouvernement américain, qui l'accuse du meurtre de Mystério, et est traqué par les médias. Cet évènement a également des conséquences terribles sur la vie de sa petite-amie M. J. et de son meilleur ami Ned. Désemparé, Peter Parker demande alors de l'aide au Docteur Strange. Ce dernier lance un sort pour que tout le monde oublie que Peter est Spider-Man. Mais les choses ne se passent pas comme prévu et cette action altère la stabilité de l'espace-temps. Cela ouvre le « Multivers », un concept terrifiant dont ils ne savent quasiment rien.")
                     .font(.callout)
