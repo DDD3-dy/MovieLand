@@ -14,6 +14,7 @@
 		F80F067027BC229F00938333 /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F066F27BC229F00938333 /* MovieCellView.swift */; };
 		F80F067327BC294700938333 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F80F067227BC294700938333 /* Kingfisher */; };
 		F83D389C27BFA42E00FC84F8 /* ActorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83D389B27BFA42E00FC84F8 /* ActorCellView.swift */; };
+		F83D389E27BFD70700FC84F8 /* SeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83D389D27BFD70700FC84F8 /* SeasonView.swift */; };
 		F843974627BEA52600CC68E1 /* CircleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843974527BEA52600CC68E1 /* CircleProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		F80F066827BC21AF00938333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F80F066F27BC229F00938333 /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
 		F83D389B27BFA42E00FC84F8 /* ActorCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCellView.swift; sourceTree = "<group>"; };
+		F83D389D27BFD70700FC84F8 /* SeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonView.swift; sourceTree = "<group>"; };
 		F843974527BEA52600CC68E1 /* CircleProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				F80F066F27BC229F00938333 /* MovieCellView.swift */,
 				F843974527BEA52600CC68E1 /* CircleProgressBarView.swift */,
 				F83D389B27BFA42E00FC84F8 /* ActorCellView.swift */,
+				F83D389D27BFD70700FC84F8 /* SeasonView.swift */,
 				F80F066527BC21AF00938333 /* Assets.xcassets */,
 				F80F066727BC21AF00938333 /* Preview Content */,
 			);
@@ -156,6 +159,7 @@
 			files = (
 				F80F066427BC21AD00938333 /* ContentView.swift in Sources */,
 				F843974627BEA52600CC68E1 /* CircleProgressBarView.swift in Sources */,
+				F83D389E27BFD70700FC84F8 /* SeasonView.swift in Sources */,
 				F80F067027BC229F00938333 /* MovieCellView.swift in Sources */,
 				F80F066227BC21AD00938333 /* MovieLandApp.swift in Sources */,
 				F83D389C27BFA42E00FC84F8 /* ActorCellView.swift in Sources */,

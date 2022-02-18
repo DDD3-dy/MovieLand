@@ -37,9 +37,9 @@ struct ActorCellView: View {
 struct ActorCellView_Previews: PreviewProvider {
     static var previews: some View {
         ActorCellView(url: URL(
-                        string: "https://www.themoviedb.org/t/p/w1280/2qhIDp44cAqP2clOgt2afQI07X8.jpg"),
-                      name: "Tom Holland",
-                      characterName: "Spider-man"
+                        string: "https://www.themoviedb.org/t/p/w1280/fEn0HyzdwVD6VxvVvff7JMbkHQX.jpg"),
+                      name: "Joe Keery",
+                      characterName: "Steve Harrington"
             )
             .frame(width: 120)
             .background(Color(red: 88/255, green: 32/255, blue: 53/255))

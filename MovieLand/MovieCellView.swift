@@ -11,7 +11,7 @@ import Kingfisher
 struct MovieCellView: View {
     var body: some View {
         HStack {
-            KFImage(URL(string: "https://www.themoviedb.org/t/p/w1280/3SyG7dq2q0ollxJ4pSsrqcfRmVj.jpg"))
+            KFImage(URL(string: "https://www.themoviedb.org/t/p/w1280/joCCbrgiXbVxcpnWOzrIwNz8tC6.jpg"))
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 100, height: 150)
@@ -20,7 +20,7 @@ struct MovieCellView: View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Spider-Man : No Way Home")
+                        Text("Stranger Things")
                             .font(.title2)
                             .fontWeight(.semibold)
                         Text("Saison + types + ect")
@@ -33,7 +33,7 @@ struct MovieCellView: View {
                         .frame(width: 45, height: 45)
                         .padding(2.5)
                 } // HSTACK
-                Text("Après les évènements liés à l'affrontement avec Mystério, l'identité secrète de Spider-Man a été révélée. Il est poursuivi par le gouvernement américain, qui l'accuse du meurtre de Mystério, et est traqué par les médias. Cet évènement a également des conséquences terribles sur la vie de sa petite-amie M. J. et de son meilleur ami Ned. Désemparé, Peter Parker demande alors de l'aide au Docteur Strange. Ce dernier lance un sort pour que tout le monde oublie que Peter est Spider-Man. Mais les choses ne se passent pas comme prévu et cette action altère la stabilité de l'espace-temps. Cela ouvre le « Multivers », un concept terrifiant dont ils ne savent quasiment rien.")
+                Text("Quand un jeune garçon disparaît, une petite ville découvre une affaire mystérieuse, des expériences secrètes, des forces surnaturelles terrifiantes... et une fillette.")
                     .font(.callout)
                     .fontWeight(.light)
                     .lineLimit(4)
