@@ -10,21 +10,19 @@ import Kingfisher
 
 struct ActorCellView: View {
     
-    let url: URL?
-    let name: String
-    let characterName: String
+    let viewModel: ActorCellModel
     
     var body: some View {
         VStack {
-            KFImage(url)
+            KFImage(viewModel.url)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
-            Text(name)
+            Text(viewModel.name)
                 .font(.footnote)
                 .fontWeight(.semibold)
-            Text(characterName)
+            Text(viewModel.characterName)
                 .font(.caption2)
                 .foregroundColor(Color.white.opacity(0.5))
         } // VSTACK
@@ -35,12 +33,15 @@ struct ActorCellView: View {
 }
 
 struct ActorCellView_Previews: PreviewProvider {
+    
+    static let viewModel = ActorCellModel(
+        url: URL(string: "https://www.themoviedb.org/t/p/w1280/fEn0HyzdwVD6VxvVvff7JMbkHQX.jpg"),
+        name: "Joe Keery",
+        characterName: "Steve Harrington"
+    )
+    
     static var previews: some View {
-        ActorCellView(url: URL(
-                        string: "https://www.themoviedb.org/t/p/w1280/fEn0HyzdwVD6VxvVvff7JMbkHQX.jpg"),
-                      name: "Joe Keery",
-                      characterName: "Steve Harrington"
-            )
+        ActorCellView(viewModel: viewModel)
             .frame(width: 120)
             .background(Color(red: 88/255, green: 32/255, blue: 53/255))
             .previewLayout(.sizeThatFits)
