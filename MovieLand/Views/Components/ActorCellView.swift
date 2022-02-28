@@ -29,6 +29,7 @@ struct ActorCellView: View {
         .fixedSize(horizontal: false, vertical: true)
         .padding(4)
         .foregroundColor(.white)
+        .clipped()
     }
 }
 

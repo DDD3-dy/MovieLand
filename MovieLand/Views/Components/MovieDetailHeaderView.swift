@@ -15,10 +15,23 @@ struct MovieDetailHeaderView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
+                
+            GeometryReader{reader in
+                
+            if reader.frame(in: .global).minY > -480 {
                 KFImage(viewModel.imageURL)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 300)
+                    .frame(width: reader.size.width, height:
+                                  reader.size.height +
+                                  reader.frame(in: .global).minY > 0 ?
+                                  reader.frame(in: .global).minY + 480 : 280
+                    )
+                    .clipped()
+                    .offset(y: -reader.frame(in: .global).minY)
+                    }
+                } // READER
+                .frame(height: 480)
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(viewModel.title)
@@ -35,7 +48,7 @@ struct MovieDetailHeaderView: View {
                         .padding(2.5)
                 } // HSTACK
                 .padding()
-                .padding(.top, 200)
+                .padding(.top, 230)
                 .background(
                     LinearGradient(
                         gradient: Gradient(colors: [.clear, Color(red: 88/255, green: 32/255, blue: 53/255)]),

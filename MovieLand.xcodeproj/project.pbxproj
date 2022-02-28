@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F804A28227C787BC00FB9FD5 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804A28127C787BC00FB9FD5 /* MovieInteractor.swift */; };
+		F804A28627C7B3F500FB9FD5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804A28527C7B3F500FB9FD5 /* DetailView.swift */; };
 		F80F066227BC21AD00938333 /* MovieLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F066127BC21AD00938333 /* MovieLandApp.swift */; };
 		F80F066627BC21AF00938333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F066527BC21AF00938333 /* Assets.xcassets */; };
 		F80F066927BC21AF00938333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F066827BC21AF00938333 /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		F804A28127C787BC00FB9FD5 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		F804A28527C7B3F500FB9FD5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F80F065E27BC21AD00938333 /* MovieLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F066127BC21AD00938333 /* MovieLandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLandApp.swift; sourceTree = "<group>"; };
 		F80F066527BC21AF00938333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				F8997EC627C299C70099A331 /* HomeIView.swift */,
+				F804A28527C7B3F500FB9FD5 /* DetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				F83D38A027BFEF8300FC84F8 /* MovieDetailHeaderView.swift in Sources */,
 				F8997EC527C293B80099A331 /* MockedMovieRepository.swift in Sources */,
 				F83D389E27BFD70700FC84F8 /* SeasonView.swift in Sources */,
+				F804A28627C7B3F500FB9FD5 /* DetailView.swift in Sources */,
 				F81F993227C1141000268C98 /* Season.swift in Sources */,
 				F80F067027BC229F00938333 /* MovieCellView.swift in Sources */,
 				F81F992827C1017300268C98 /* ActorCellModel.swift in Sources */,
