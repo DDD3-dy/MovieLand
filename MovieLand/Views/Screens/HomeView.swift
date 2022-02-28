@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct HomeIView: View {
+struct HomeView: View {
     
     let movieRepository = RealMovieRepository()
-    @State var medias = [Serie]()
+    @EnvironmentObject var appState: AppState
     
     init() {
         let appearance = UINavigationBarAppearance()
@@ -32,7 +32,7 @@ struct HomeIView: View {
         ZStack(alignment: .top) {
             NavigationView {
                 ScrollView {
-                   ForEach(medias) { medium in
+                    ForEach(appState.series) { medium in
                       let viewModel = MovieCellModel(
                         imageURL: medium.imageURL,
                         title: medium.title,
@@ -41,27 +41,35 @@ struct HomeIView: View {
                         rating: medium.rating,
                         description: medium.description
                         )
-                        MovieCellView(viewModel: viewModel)
+                       NavigationLink(
+                        destination: DetailView(serie: medium),
+                        label: {
+                            MovieCellView(viewModel: viewModel)
+                        }
+                      ) // NAVTIONLINK
                     }
                 } // SCROLL
                 .navigationTitle("MovieLand")
                 .background(Color(red: 88/255, green: 32/255, blue: 53/255).ignoresSafeArea())
             } // NAVIGATION
             .onAppear(perform: {
-                MovieInteractor().getSeries { series in
-                    medias = series
-                }
+                loadSeries()
             })
-            Circle()
-                .frame(height: 60)
-                .foregroundColor(Color(red: 88/255, green: 32/255, blue: 53/255))
-                .ignoresSafeArea()
         } // ZSTACK
+    }
+    
+    func loadSeries() {
+        MovieInteractor().getSeries { series in
+            DispatchQueue.main.async {
+                appState.series = series
+            }
+        }
     }
 }
 
 struct HomeIView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeIView()
+        HomeView()
+            .environmentObject(AppState.preview)
     }
 }

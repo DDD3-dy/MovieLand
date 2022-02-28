@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F802D32027CD08F4002BB5DB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802D31F27CD08F4002BB5DB /* AppState.swift */; };
+		F802D32427CD1FBE002BB5DB /* JSONFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802D32327CD1FBE002BB5DB /* JSONFetcher.swift */; };
 		F804A28227C787BC00FB9FD5 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804A28127C787BC00FB9FD5 /* MovieInteractor.swift */; };
 		F804A28627C7B3F500FB9FD5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F804A28527C7B3F500FB9FD5 /* DetailView.swift */; };
 		F80F066227BC21AD00938333 /* MovieLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F066127BC21AD00938333 /* MovieLandApp.swift */; };
@@ -29,10 +31,12 @@
 		F88DF5A127C3948C00FEDB91 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */; };
 		F8997EC327C2766F0099A331 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8997EC227C2766F0099A331 /* MockedData.swift */; };
 		F8997EC527C293B80099A331 /* MockedMovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8997EC427C293B80099A331 /* MockedMovieRepository.swift */; };
-		F8997EC727C299C70099A331 /* HomeIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8997EC627C299C70099A331 /* HomeIView.swift */; };
+		F8997EC727C299C70099A331 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8997EC627C299C70099A331 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F802D31F27CD08F4002BB5DB /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F802D32327CD1FBE002BB5DB /* JSONFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetcher.swift; sourceTree = "<group>"; };
 		F804A28127C787BC00FB9FD5 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
 		F804A28527C7B3F500FB9FD5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F80F065E27BC21AD00938333 /* MovieLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +59,7 @@
 		F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		F8997EC227C2766F0099A331 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		F8997EC427C293B80099A331 /* MockedMovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedMovieRepository.swift; sourceTree = "<group>"; };
-		F8997EC627C299C70099A331 /* HomeIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIView.swift; sourceTree = "<group>"; };
+		F8997EC627C299C70099A331 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				F80F066727BC21AF00938333 /* Preview Content */,
 				F8997EC227C2766F0099A331 /* MockedData.swift */,
 				F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */,
+				F802D32327CD1FBE002BB5DB /* JSONFetcher.swift */,
 			);
 			path = MovieLand;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F80F066127BC21AD00938333 /* MovieLandApp.swift */,
+				F802D31F27CD08F4002BB5DB /* AppState.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -169,7 +175,7 @@
 		F8997EC827C2F5060099A331 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F8997EC627C299C70099A331 /* HomeIView.swift */,
+				F8997EC627C299C70099A331 /* HomeView.swift */,
 				F804A28527C7B3F500FB9FD5 /* DetailView.swift */,
 			);
 			path = Screens;
@@ -268,11 +274,13 @@
 				F81F992227C0F40600268C98 /* MovieCellModel.swift in Sources */,
 				F81F993027C112B200268C98 /* Actor.swift in Sources */,
 				F804A28227C787BC00FB9FD5 /* MovieInteractor.swift in Sources */,
+				F802D32427CD1FBE002BB5DB /* JSONFetcher.swift in Sources */,
 				F81F993427C115B800268C98 /* Serie.swift in Sources */,
 				F88DF5A127C3948C00FEDB91 /* PrivateKey.swift in Sources */,
 				F8997EC327C2766F0099A331 /* MockedData.swift in Sources */,
 				F843974627BEA52600CC68E1 /* CircleProgressBarView.swift in Sources */,
-				F8997EC727C299C70099A331 /* HomeIView.swift in Sources */,
+				F802D32027CD08F4002BB5DB /* AppState.swift in Sources */,
+				F8997EC727C299C70099A331 /* HomeView.swift in Sources */,
 				F83D38A027BFEF8300FC84F8 /* MovieDetailHeaderView.swift in Sources */,
 				F8997EC527C293B80099A331 /* MockedMovieRepository.swift in Sources */,
 				F83D389E27BFD70700FC84F8 /* SeasonView.swift in Sources */,

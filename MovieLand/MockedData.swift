@@ -30,13 +30,13 @@ let mockedSeason = [
     Season(
            imageURL: URL(string: "https://www.themoviedb.org/t/p/w260_and_h390_bestv2/jbUJjcQsCgNlhgo4L0O8RQZqQLx.jpg"),
            seasonNumber: 15,
-           episodesCound: 20,
+           episodesCount: 20,
            description: "Sam, Jack, Castiel, Mary, Bobby Singer, Rowena et Arthur Ketch réfléchissent à un moyen pour sauver Dean."
     ),
     Season(
            imageURL: URL(string: "https://www.themoviedb.org/t/p/w260_and_h390_bestv2/22BarYiD0QFajKT1AG71RhBrJfH.jpg"),
            seasonNumber: 15,
-           episodesCound: 23,
+           episodesCount: 23,
            description: "Les frères Winchester ont pour mission de protéger le Nephilim dont les pouvoirs puissants attirent l’attention d’Asmodeus, un nouvel ennemi. Sorti de l'ombre, le dernier Prince de l'Enfer cherche à mettre la main sur l'adolescent pour régner sur l'Enfer. Avec Castiel, de nouveau ressuscité, Sam et Dean vont devoir assurer la protection de Jack pour protéger le monde."
     ),
 ]

@@ -30,11 +30,23 @@ struct DetailView: View {
                             characterName: actor.characterName
                         )
                         ActorCellView(viewModel: actorCellViewModel)
+                            .frame(width: 110)
                     }
-                }
+                } // HSTACK
+            } // SCROLLVIEW ACTOR
+            
+            ForEach(serie.seasons) { season in
+                let seasonViewModel = SeasonModel(
+                    imageURL: season.imageURL,
+                    seasonNumber: season.seasonNumber,
+                    episodesCount: season.episodesCount,
+                    description: season.description
+                )
+                SeasonView(viewModel: seasonViewModel)
             }
-        }
+        } // SCROLLVIEW
         .background(Color(red: 88/255, green: 32/255, blue: 53/255).ignoresSafeArea())
+        .navigationBarTitleDisplayMode(.automatic)
     }
 }
 

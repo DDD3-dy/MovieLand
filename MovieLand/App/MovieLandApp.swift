@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct MovieLandApp: App {
+    
+    private let appStade = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            HomeIView()
+            HomeView()
+                .environmentObject(appStade)
         }
     }
 }
