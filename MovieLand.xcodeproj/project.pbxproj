@@ -30,6 +30,8 @@
 		F84C2EA627CE3A730040CEF8 /* SerieMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C2EA527CE3A730040CEF8 /* SerieMapper.swift */; };
 		F84C2EA827CE3A8B0040CEF8 /* ActorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C2EA727CE3A8B0040CEF8 /* ActorMapper.swift */; };
 		F84C2EAA27CE3A980040CEF8 /* SeasonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C2EA927CE3A980040CEF8 /* SeasonMapper.swift */; };
+		F84C2EB027CE66AF0040CEF8 /* RestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C2EAF27CE66AF0040CEF8 /* RestActor.swift */; };
+		F84C2EB227CE68100040CEF8 /* RestSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C2EB127CE68100040CEF8 /* RestSerie.swift */; };
 		F88DF59F27C393FF00FEDB91 /* RealMovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88DF59E27C393FF00FEDB91 /* RealMovieRepository.swift */; };
 		F88DF5A127C3948C00FEDB91 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */; };
 		F8997EC327C2766F0099A331 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8997EC227C2766F0099A331 /* MockedData.swift */; };
@@ -61,6 +63,8 @@
 		F84C2EA527CE3A730040CEF8 /* SerieMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieMapper.swift; sourceTree = "<group>"; };
 		F84C2EA727CE3A8B0040CEF8 /* ActorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorMapper.swift; sourceTree = "<group>"; };
 		F84C2EA927CE3A980040CEF8 /* SeasonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonMapper.swift; sourceTree = "<group>"; };
+		F84C2EAF27CE66AF0040CEF8 /* RestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestActor.swift; sourceTree = "<group>"; };
+		F84C2EB127CE68100040CEF8 /* RestSerie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSerie.swift; sourceTree = "<group>"; };
 		F88DF59E27C393FF00FEDB91 /* RealMovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealMovieRepository.swift; sourceTree = "<group>"; };
 		F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
 		F8997EC227C2766F0099A331 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
@@ -123,11 +127,12 @@
 				F81F992E27C1126D00268C98 /* Models */,
 				F84C2EAC27CE50850040CEF8 /* Mappers */,
 				F804A28327C7AAEC00FB9FD5 /* Repositories */,
-				F80F066527BC21AF00938333 /* Assets.xcassets */,
+				F84C2EB327CE681D0040CEF8 /* RestsObjects */,
 				F80F066727BC21AF00938333 /* Preview Content */,
 				F8997EC227C2766F0099A331 /* MockedData.swift */,
 				F88DF5A027C3948C00FEDB91 /* PrivateKey.swift */,
 				F802D32327CD1FBE002BB5DB /* JSONFetcher.swift */,
+				F80F066527BC21AF00938333 /* Assets.xcassets */,
 			);
 			path = MovieLand;
 			sourceTree = "<group>";
@@ -187,6 +192,15 @@
 				F84C2EA927CE3A980040CEF8 /* SeasonMapper.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		F84C2EB327CE681D0040CEF8 /* RestsObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F84C2EB127CE68100040CEF8 /* RestSerie.swift */,
+				F84C2EAF27CE66AF0040CEF8 /* RestActor.swift */,
+			);
+			path = RestsObjects;
 			sourceTree = "<group>";
 		};
 		F8997EC827C2F5060099A331 /* Screens */ = {
@@ -305,7 +319,9 @@
 				F804A28627C7B3F500FB9FD5 /* DetailView.swift in Sources */,
 				F81F993227C1141000268C98 /* Season.swift in Sources */,
 				F84C2EA827CE3A8B0040CEF8 /* ActorMapper.swift in Sources */,
+				F84C2EB027CE66AF0040CEF8 /* RestActor.swift in Sources */,
 				F80F067027BC229F00938333 /* MovieCellView.swift in Sources */,
+				F84C2EB227CE68100040CEF8 /* RestSerie.swift in Sources */,
 				F81F992827C1017300268C98 /* ActorCellModel.swift in Sources */,
 				F88DF59F27C393FF00FEDB91 /* RealMovieRepository.swift in Sources */,
 				F84C2EAA27CE3A980040CEF8 /* SeasonMapper.swift in Sources */,

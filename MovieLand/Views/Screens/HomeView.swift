@@ -73,8 +73,3 @@ struct HomeIView_Previews: PreviewProvider {
             .environmentObject(AppState.preview)
     }
 }
-
-
-
-
-

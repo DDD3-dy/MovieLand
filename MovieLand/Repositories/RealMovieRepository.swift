@@ -25,37 +25,30 @@ class RealMovieRepository {
         }
     }
     
-    func getMovieDetails(id: Int, casting: [Actor], completion: @escaping (Serie) -> Void) {
+    func getMovieDetails(id: Int, completion: @escaping (RestSerie) -> Void) {
         let url = URL(string: "https://api.themoviedb.org/3/tv/\(id)?api_key=\(API_KEY)&language=fr")!
         
-        JSONFetcher.fetchJSON(from: url) { json in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
+            let decoder = JSONDecoder()
             
-            
-            // Récupérer les saison
-            let seasonJSON = json["seasons"] as! [[String: Any]]
-            var seasons = [Season]()
-            for season in seasonJSON {
-                let newSeason = SeasonMapper.map(jsonSeason: season)
-                seasons.append(newSeason)
-            }
-            
-            let serie = SerieMapper.map(jsonSerie: json, casting: casting, season: seasons)
-            completion(serie)
+            let restSerie = try! decoder.decode(RestSerie.self, from: data)
+            completion(restSerie)
         }
+        
+        task.resume()
     }
     
-    func getCreditsDetails(forMovieID id: Int, completion: @escaping ([Actor]) -> Void) {
+    func getCreditsDetails(forMovieID id: Int, completion: @escaping ([RestActor]) -> Void) {
         let url = URL(string: "https://api.themoviedb.org/3/tv/\(id)/credits?api_key=\(API_KEY)&language=fr")!
         
-        JSONFetcher.fetchJSON(from: url) { json in
-            var actors = [Actor]()
-            let cast = json["cast"] as! [[String: Any]]
-            for actor in cast {
-              let newActor = ActorMapper.map(jsonActor: actor)
-                actors.append(newActor)
-            }
-            
-            completion(actors)
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else { return }
+            let decoder = JSONDecoder()
+            let resCast = try! decoder.decode(RestCredits.self, from: data)
+            completion(resCast.cast)
         }
+        
+        task.resume()
     }
 }
